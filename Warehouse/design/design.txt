@@ -20,6 +20,8 @@ The warehouse is not allowed to create new items or remove existing ones, it can
 -requirement: players can only pick-up/drop-off items by interaction through chests.
 It will not be possible to let the warehouse interact with the player's inventory directly because that is not realistic warehouse behaviour.
 
+-warehouse will store items for an optional fee (percentage per item? percentage per stack?)
+
 -----------------------------------
 
 Commands:
