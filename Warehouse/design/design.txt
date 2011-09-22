@@ -1,3 +1,6 @@
+
+-----------------------------------
+
 The Warehouse plugin will implement the following functionality:
 
 -mark chests to be part of a Warehouse by putting a sign on them.
@@ -8,7 +11,37 @@ The contents of the sign describe what items the chest will deliver from the sup
 -mark chest to be a dropoff point that players can use to offload items to the Warehouse, by putting them into the chest.
 
 -requirement: the Warehouse can only deliver goods that were previously dropped off by players into the dropoff-chest.
+The warehouse is not allowed to create new items or remove existing ones, it can only transfer existing items.
 
 -players/groups can create and share warehouses with each other.
 
 -future requirement: the warehouse can be used as the supply-part for a shop where items can be bought or sold.
+
+-requirement: players can only pick-up/drop-off items by interaction through chests.
+It will not be possible to let the warehouse interact with the player's inventory directly because that is not realistic warehouse behaviour.
+
+-----------------------------------
+
+Commands:
+
+/warehouse_create <warehouse_name> - creates a new warehouse
+/warehouse_close <warehouse_name> - closes a completely empty warehouse
+/warehouse_close <warehouse_name> <destination_warehouse_name> - closes a warehouse after transferring contents to another warehouse.
+
+/warehouse_primary <warehouse_name> - sets your primary warehouse
+
+/warehouse_inventory <> - shows the inventory of your primary warehouse.
+/warehouse_inventory <warehouse_name> - shows the inventory of the warehouse
+/warehouse_members <warehouse_name> - shows the members lists with their roles for the warehouse
+/warehouse_transfer <source_warehouse_name> <item_amount> <item_name> <destination_warehouse_name> -
+    transfers goods from a warehouse to another warehouse. Using '*' as amount is allowed.
+    
+/warehouse_list <> - lists all warehouses you have access to, along with your current role for them
+
+
+-----------------------------------
+
+Permissions:
+
+-----------------------------------
+
