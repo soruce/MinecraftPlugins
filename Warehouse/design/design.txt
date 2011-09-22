@@ -1,0 +1,14 @@
+The Warehouse plugin will implement the following functionality:
+
+-mark chests to be part of a Warehouse by putting a sign on them.
+The contents of the sign describe what items the chest will deliver from the supply pool.
+
+-interact with the sign/chest in some way to refill the chests contents from the Warehouse.
+
+-mark chest to be a dropoff point that players can use to offload items to the Warehouse, by putting them into the chest.
+
+-requirement: the Warehouse can only deliver goods that were previously dropped off by players into the dropoff-chest.
+
+-players/groups can create and share warehouses with each other.
+
+-future requirement: the warehouse can be used as the supply-part for a shop where items can be bought or sold.

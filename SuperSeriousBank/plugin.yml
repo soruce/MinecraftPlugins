@@ -1,0 +1,25 @@
+name: SuperSeriousBank
+version: 0.0.1
+description: <insert description here>
+
+author: Soruce
+website: <insert website here>
+
+
+main: com.soruce.minecraft.superseriousbank.Main
+database: false
+depend: [iConomy]
+softdepend: [LWC]
+
+commands:
+    check_ssbank_balance:
+        
+permissions:
+    ssbank.*:
+        description: Gives access to all SuperSeriousBank commands
+        children:
+            ssbank.check_balance
+    ssbank.check_balance:
+        description: Allows you to check the current SSBank balance
+        default: op
+
